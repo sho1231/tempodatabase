@@ -55,6 +55,7 @@ function foo1(){
     console.log(obj["adr"].join("<br>"))
     console.log(obj["food"].join("<br>"))
     addrow(obj);
+    alert("Data submitted successfully");
     let fo=document.getElementById('abc')
     fo.reset();
     // $('input[type="checkbox"]').prop('checked', false);
