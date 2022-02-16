@@ -54,11 +54,9 @@ function foo1(){
     console.log(obj);
     console.log(obj["adr"].join("<br>"))
     console.log(obj["food"].join("<br>"))
-    addrow(obj)
-    alert("data successfully added");
-    let form=document.querySelector('#abc');
-    form.reset
-    // document.body.append(document.table.append(addrow(obj)))
+    addrow(obj);
+    let fo=document.getElementById('abc')
+    fo.reset();
 }
 function addrow(obj){
     let tbody=document.querySelector('tbody')
@@ -66,10 +64,10 @@ function addrow(obj){
     for(i in obj){
         console.log(obj[i])
         if(obj=="food"){
-            data=obj["food"].join("")
+            data=obj["food"].join([",\n"])
         }
         else if(obj=="adr"){
-            data=obj["adr"].join(",")
+            data=obj["adr"].join("")
         }
         else{
             data=obj[i];
