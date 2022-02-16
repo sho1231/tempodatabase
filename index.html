@@ -16,29 +16,29 @@
                <div class="col-md-3" style="margin-right:40px;border: left 213px;">
                 <div class="box-input"></div>
                 <h1 style="margin-left:-47px">Form Submission:</h1>
-                <form method="post" id="abc">
+                <form id="abc">
                     <div class="form-row" style="margin-bottom:23px">
                       <div class="form-group">
                         <label for="fn">First Name:</label>
-                        <input type="text" class="form-control" id="fn" style="width:130%" placeholder="First Name">
+                        <input type="text" class="form-control" id="fn" style="width:130%" placeholder="First Name" required>
                       </div>
                       <div class="form-group">
                         <label for="ln">Last Name:</label>
-                        <input type="text" class="form-control" id="ln" style="width:130%" placeholder="Last Name">
+                        <input type="text" class="form-control" id="ln" style="width:130%" placeholder="Last Name" required>
                       </div>
                     </div>
                     <div class="form-group" id="adr">
                       <label for="ad1">Address Line 1:</label>
-                      <input type="text" class="form-control adr"  id="ad1" style="margin-left:-7px;width:92%" placeholder="Address Line 1">
+                      <input type="text" class="form-control adr"  id="ad1" style="margin-left:-7px;width:92%" placeholder="Address Line 1" required>
                     </div>
                     <div class="form-group">
                       <label for="ad2">Address Line 2</label>
-                      <input type="text" class="form-control adr"  id="ad2" style="margin-left:-7px;width:92%" placeholder="Address Line 2">
+                      <input type="text" class="form-control adr"  id="ad2" style="margin-left:-7px;width:92%" placeholder="Address Line 2" required>
                     </div>
                     <div class="form-row">
                       <div class="form-group">
                         <label for="pin">PIN</label>
-                        <input type="text" class="form-control" id="pin" placeholder="PIN" style="width:135%;margin-left:-2px">
+                        <input type="text" class="form-control" id="pin" placeholder="PIN" style="width:135%;margin-left:-2px" required>
                       </div>
                     </div>
                     <div class="form-group">
@@ -92,11 +92,11 @@
                       </div>
                       <div class="form-group" style="margin-left:-9px">
                         <label for="st">State:</label>
-                        <input type="text" class="form-control" id="st" placeholder="State">
+                        <input type="text" class="form-control" id="st" placeholder="State" required> 
                       </div>
                       <div class="form-group" style="margin-left:-9px">
                         <label for="c">Country:</label>
-                        <input type="text" class="form-control" id="c" placeholder="Country">
+                        <input type="text" class="form-control" id="c" placeholder="Country" required>
                       </div>
                       <div style="margin-left:-10px;">
                         <button type="button" style="width:100%;margin-top:2px;padding:10px" class="btn btn-secondary btn-sm" onclick="foo1()">Submit</button>
