@@ -57,6 +57,8 @@ function foo1(){
     addrow(obj);
     let fo=document.getElementById('abc')
     fo.reset();
+    $('input[type="checkbox"]').prop('checked', false);
+    $('input[type="radio"]').prop('checked', false)
 }
 function addrow(obj){
     let tbody=document.querySelector('tbody')
