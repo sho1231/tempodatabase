@@ -38,7 +38,7 @@ function foo1(){
         country:null,
     };
     if(!choice_check(obj)){
-        alert("Must select more than 1 choice")
+        alert("Must select more than 1 food choice")
         return;
     }
     if(!gender_check(obj)){
