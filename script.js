@@ -21,6 +21,13 @@ function gender_check(obj){
     }
     return c>0;
 }
+function check_data_field(obj){
+    for(i in obj){
+        if(obj[i]=='')
+            return false;
+    }
+    return true;
+}
 function address(obj){
     let a=document.getElementsByClassName('form-control adr');
     for(i=0;i<a.length;i++)
@@ -51,9 +58,10 @@ function foo1(){
     obj.pin=document.getElementById('pin').value;
     obj.state=document.getElementById('st').value;
     obj.country=document.getElementById('c').value;
-    console.log(obj);
-    console.log(obj["adr"].join("<br>"))
-    console.log(obj["food"].join("<br>"))
+    if(!check_data_field(obj)){
+        alert("Please fill all the data fields")
+        return ;
+    }
     addrow(obj);
     alert("Data submitted successfully");
     let fo=document.getElementById('abc')
@@ -64,7 +72,6 @@ function addrow(obj){
     let tbody=document.querySelector('tbody')
     let row=document.createElement('tr');
     for(i in obj){
-        console.log(obj[i])
         if(obj=="food"){
             data=obj["food"].join([",\n"])
         }
